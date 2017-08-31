@@ -1,7 +1,11 @@
-welcome: "Welcome! What's your name?"
-first_number: "Enter your first number"
-second_number: "Enter your second number"
-invalid_num: "Enter a valid number"
-enter_operation: "Must enter 1, 2, 3 or 4"
-play_again: 'Do you want to make more calculations? Y to calculate more'
-zero: "You can't devide by 0. Enter a number different than 0"
+
+  welcome: "Welcome! What's your name?"
+  first_number: "Enter your first number"
+  second_number: "Enter your second number"
+  invalid_num: "Enter a valid number"
+  enter_operation: "Must enter 1, 2, 3 or 4"
+  play_again: 'Do you want to make more calculations? Y to calculate more'
+  zero: "You can't devide by 0. Enter a number different than 0"
+
+
+
