@@ -1,4 +1,4 @@
-#require "pry"
+require "pry"
 require 'yaml'
 MESSAGES = YAML.load_file('messages.yml')
 # ask user for two numbers
@@ -45,8 +45,7 @@ end
 
 
 def integer?(input)
-  #/^\s*[-+]?(?=.*[1-9])\d*(?:\.\d{1,2})?\s*$/.match(input) 
-  /^\s*[-+]?(?=.*[1-9])?[0-9]{1,2}*\.?[0-9]{1,2}$/.match(input) 
+  /^\s*[-+]?(?=.*[1-9])\d*(?:\.\d{1,2})?\s*$/.match(input) 
 end
 
 def operation_to_message(operation)
@@ -105,7 +104,7 @@ loop do
         break if %w(1 2 3 4).include?(operator)
       prompt(MESSAGES['enter_operation'])
     end
-
+   
     result = case operator
     when '1' 
       integer_one.to_f + integer_two.to_f
@@ -116,8 +115,9 @@ loop do
     when '4'
       integer_one.to_f / integer_two.to_f
 end
-
-    prompt("Your result is #{result.to_f}")
+    
+    prompt(operation_to_message(operator))
+    prompt("Your result is #{result.to_f.round(2)}")
     
    
 prompt(MESSAGES['play_again'])

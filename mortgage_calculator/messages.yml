@@ -1,0 +1,7 @@
+welcome: "Welcome! Let's calculate your montly loan rate!"
+loan_amount: "Please enter amount of your loan"
+invalid_number: "Please enter a valid number"
+annual_percent_rate: "Please enter your Annual Percentage Rate (%)"
+loan_duration: "How is your loan duration? (Months)"
+more_calculations: "Do you want to make more calculations? (Y) "
+thanks: "Thank you for using our mortgage calculator"
